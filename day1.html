@@ -8,21 +8,21 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>1st MBZUAI Machine Learning for Large Models Workshop 2024</title>
+    <title>MBZUAI-Berkeley Joint Workshop on Emerging Directions of Machine Learning </title>
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="./MLLM2024_day1_files/banner.jpeg" alt="MBZUAI Machine Learning for Large Models 2024 Banner">
+        <img src="./MLLM2024_files/banner.jpeg" alt="MBZUAI Machine Learning for Large Models 2024 Banner">
         <div class="top-left">
-            <span class="title2">1st MBZUAI Workshop on</span>
-            <br><br> <span class="title1">Machine Learning for Large Models</span> 
+            <span class="title2">MBZUAI-Berkeley Joint Workshop on</span>
+            <br><br> <span class="title1" style="font-size: 38px;">Emerging Directions of Machine Learning</span> 
             <!-- <br><br>
             <span class="year">Empowering Sustainable Futures</span> -->
         </div>
         <div class="bottom-right">
-            June 3-4, 2024 <br> MBZUAI, Abu Dhabi
+            Mar 12, 2025 <br> MBZUAI, Abu Dhabi
         </div>
     </div>
 
@@ -35,20 +35,20 @@
                 <a title="Speakers List" href="speakerlist.html">Speakers List</a> 
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="day1.html">Program Day 1</a> 
+                <a title="Conference Program" href="day1.html">Program</a> 
             </td>
             <!-- <td class="navigation">
                 <a title="Conference Program" href="https://mbzuai.ac.ae/">MBZUAI</a> 
             </td> -->
-            <td class="navigation">
+            <!-- <td class="navigation">
                 <a title="Conference Program Day 2" href="day2.html">Program Day 2</a> 
-            </td>
+            </td> -->
         </tr>
     </tbody></table>
 
    
 
-    <h2>Day 1 Program (June 3, Mon, Lecture Hall 1 and 2)</h2>
+    <h2>Program (March 12, Wednesday, Excecutive Theatre)</h2>
 
     <table id="Eric Xing">
         <tbody><tr class="speaker">
@@ -56,78 +56,53 @@
                 9:00 am
             </td>
             <td class="title-special">
-                Opening remarks
+                Welcome coffee
             </td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td class="speaker">
                 <a href="https://mbzuai.ac.ae/study/faculty/professor-eric-xing/"><b>Eric Xing</b></a> (MBZUAI)
             </td>
-        </tr>
+        </tr> -->
     </tbody></table>
 
-    <table id="Quanquan Gu">
+    <table id="Michael I. Jordan">
         <tbody><tr>
             <td class="date" rowspan="3">
                 9:30 am
             </td>
             <td class="title">
-                Self-Play Preference Optimization for Language Model Alignment
+                Gradient Equilibrium in Online Learning: Theory and Applications
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="http://web.cs.ucla.edu/~qgu/"><b>Quanquan Gu</b></a> (UCLA)
+                <a href="https://people.eecs.berkeley.edu/~jordan/"><b>Michael I. Jordan</b></a> (UC Berkeley)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Traditional reinforcement learning from human feedback (RLHF) approaches relying on parametric models like the Bradley-Terry model 
-                fall short in capturing the intransitivity and irrationality in human preferences. Recent advancements suggest that directly working 
-                with preference probabilities can yield a more accurate reflection of human preferences, enabling more flexible and accurate language 
-                model alignment. In this talk, I will introduce a self-play-based method for language model alignment, which treats the problem as a 
-                constant-sum two-player game aimed at identifying the Nash equilibrium policy. Our approach, dubbed \textit{Self-Play Preference Optimization} 
-                (SPPO), approximates the Nash equilibrium through iterative policy updates and enjoys theoretical convergence guarantee. Our method can 
-                effectively increase the log-likelihood of the chosen response and decrease that of the rejected response, which cannot be trivially 
-                achieved by symmetric pairwise loss such as Direct Preference Optimization (DPO) and Identity Preference Optimization (IPO). In our 
-                experiments, using only 60k prompts (without responses) from the UltraFeedback dataset and without any prompt augmentation, by leveraging 
-                a pre-trained preference model PairRM with only 0.4B parameters, SPPO can obtain a model from fine-tuning Mistral-7B-Instruct-v0.2 that 
-                achieves the state-of-the-art length-controlled win-rate of 28.53% against GPT-4-Turbo on AlpacaEval 2.0. It also outperforms the (iterative) 
-                DPO and IPO on MT-Bench and the Open LLM Leaderboard. Notably, the strong performance of SPPO is achieved without additional external 
-                supervision (e.g., responses, preferences, etc.) from GPT-4 or other stronger language models.
+                We present a new perspective on online learning that we refer to as gradient equilibrium: a sequence of iterates achieves gradient equilibrium if the average of gradients of losses along the sequence converges to zero. In general, this condition is not implied by, nor implies, sublinear regret. It turns out that gradient equilibrium is achievable by standard online learning methods such as gradient descent and mirror descent with constant step sizes (rather than decaying step sizes, as is usually required for no regret). Further, as we show through examples, gradient equilibrium translates into an interpretable and meaningful property in online prediction problems spanning regression, classification, quantile estimation, and others. Notably, we show that the gradient equilibrium framework can be used to develop a debiasing scheme for black-box predictions under arbitrary distribution shift, based on simple post hoc online descent updates. We also show that post hoc gradient updates can be used to calibrate predicted quantiles under distribution shift, and that the framework leads to unbiased Elo scores for pairwise preference prediction.  [with Anastasios Angelopoulos and Ryan Tibshirani].
         </td></tr>
     </tbody></table>
     
-     <table id="Hadi Abdine">
+     <table id="Alireza Fallah">
         <tbody><tr>
             <td class="date" rowspan="3">
                 10:00am
             </td>
             <td class="title">
-                Beyond Classification: Multimodal Protein Function Prediction with Prot2Text
+                Fair Allocation in Dynamic Mechanism Design
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://hadi-abdine.github.io"><b>Hadi Abdine</b></a> (Ecole Polytechnique)
+                <a href="https://afallah.lids.mit.edu/"><b>Alireza Fallah</b></a> (UC Berkeley)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                In recent years, significant advancements have been made in protein function 
-                prediction through machine learning. However, most methods limit themselves 
-                to multi-classification, assigning predefined labels to proteins. This talk 
-                presents Prot2Text, a groundbreaking approach that predicts protein functions 
-                in a free text format, transcending traditional binary or categorical classifications. 
-                Prot2Text leverages an encoder-decoder framework, combining Graph Neural Networks (GNNs) 
-                and Large Language Models (LLMs) to integrate diverse data types such as protein sequences, 
-                structures, and textual annotations. This multimodal approach enables a comprehensive 
-                representation of protein functions, allowing for the generation of detailed and precise 
-                functional descriptions. We will discuss the evaluation of Prot2Text using a multimodal 
-                protein dataset extracted from SwissProt and share empirical results demonstrating its 
-                effectiveness. This work underscores the transformative potential of integrating GNNs and 
-                LLMs, providing researchers with advanced tools for more accurate and nuanced function prediction 
-                for both known and novel proteins.
+                We consider a dynamic mechanism design problem where an auctioneer sells an indivisible good to groups of buyers in every round, for a total of T rounds. The auctioneer aims to maximize their discounted overall revenue while adhering to a fairness constraint that guarantees a minimum average allocation for each group. We begin by studying the static case (T=1) and establish that the optimal mechanism involves two types of subsidization: one that increases the overall probability of allocation to all buyers, and another that favors the groups which otherwise have a lower probability of winning the item. We then extend our results to the dynamic case by characterizing a set of recursive functions that determine the optimal allocation and payments in each round. Notably, our results establish that in the dynamic case, the seller, on the one hand, commits to a participation bonus to incentivize truth-telling, and on the other hand, charges an entry fee for every round. Moreover, the optimal allocation once more involves subsidization, which its extent depends on the difference in future utilities for both the seller and buyers when allocating the item to one group versus the others. Finally, we present an approximation scheme to solve the recursive equations and determine an approximately optimal and fair allocation efficiently. Based on joint work with Annie Ulichney and Michael I. Jordan.
         </td></tr>
     </tbody></table>
 
@@ -149,50 +124,43 @@
         </tr>
     </tbody></table>
 
- <table id="Francesco Locatello">
+ <table id="Ian Waudby-Smith">
         <tbody><tr>
             <td class="date" rowspan="3">
                 11:00am
             </td>
             <td class="title">
-                Are large models enough for causality? 
+                Election audits via anytime-valid inference
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://www.francescolocatello.com"><b>Francesco Locatello</b></a> (ISTA)
+                <a href="https://ianws.com/"><b>Ian Waudby-Smith</b></a> (UC Berkeley)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Machine learning and AI have the potential to transform data-driven scientific discovery, enabling accurate predictions for several 
-                scientific phenomena. Much of the current progress is driven by scale and, conveniently, many scientific questions require analyzing 
-                massive amounts of data. At the same time, in scientific applications predictions are often incorporated into broader analysis to draw 
-                new insights that are causal in nature. In this talk I will explore the role of scale in causal analyses. I will start by showing it is 
-                possible to extract causal knowledge from a pre-trained statistical model that was trained without causal considerations. Next, I will
-                discuss when, how, and why causal directions can be directly predicted by transformers trained with supervised learning in a controlled 
-                synthetic setting. Finally, I will discuss the open challenges solving real-world causal downstream tasks in the sciences. For this, I 
-                will present ISTAnt, the first real-world benchmark for estimating causal effects from high-dimensional observations in experimental ecology.
+                Accurately determining the outcome of an election is a complex task with many potential sources of error, ranging from software glitches in voting machines to procedural lapses to outright fraud. Risk-limiting audits (RLA) are statistically principled "incremental" hand counts that provide statistical assurance that reported outcomes accurately reflect the validly cast votes. We present a suite of tools for conducting RLAs using confidence sequences -- sequences of confidence sets which uniformly capture an electoral parameter of interest from the start of an audit to the point of an exhaustive recount with high probability. Adopting the SHANGRLA framework, we design nonnegative martingales which yield computationally and statistically efficient confidence sequences and RLAs for a wide variety of election types.
         </td></tr>
     </tbody></table>
 
-    <table id="Salman Khan">
+    <table id="Mingming Gong">
         <tbody><tr>
             <td class="date" rowspan="3">
                 11:30am
             </td>
             <td class="title">
-                Towards Pixel Grounding Large Language Models
+                On the Identifiability of ODEs/SDEs for Causal Inference
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://mbzuai.ac.ae/study/faculty/salman-khan/"><b>Salman Khan</b></a> (MBZUAI)
+                <a href="https://mbzuai.ac.ae/study/faculty/mingming-gong/"><b>Mingming Gong</b></a> (MBZUAI & Unimelb)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Large Multimodal Models (LMMs) extend Large Language Models to the vision domain. Initial LMMs used holistic images and text prompts to generate ungrounded textual responses. Recently, region-level LMMs have been used to generate visually grounded responses. However, they are limited to only referring to a single object category at a time, require users to specify the regions, or cannot offer dense pixel-wise object grounding. In this talk, I will talk about Grounding LMM (GLaMM), the first model that can generate natural language responses seamlessly intertwined with corresponding object segmentation masks. GLaMM not only grounds objects appearing in the conversations but is flexible enough to accept both textual and optional visual prompts (region of interest) as input. This empowers users to interact with the model at various levels of granularity, both in textual and visual domains. Due to the lack of standard benchmarks for the novel setting of visually Grounded Conversation Generation (GCG), we introduce a comprehensive evaluation protocol with our curated grounded conversations. Further, we propose a densely annotated Grounding-anything Dataset (GranD) using an automated annotation pipeline that encompasses 7.5M unique concepts grounded in a total of 810M regions available with segmentation masks. Besides GCG, GLaMM also performs effectively on several downstream tasks, e.g., referring expression segmentation, image and region-level captioning and vision-language conversations.
+            ODEs/SDEs have recently gained significant attention in machine learning and causal inference. However, the theoretical aspects, for example, identifiability and asymptotic properties of statistical estimation are still obscure. In this presentation, I will present our recent results on identifiability of linear ODE/SDEs from observational data. These identifiability conditions are crucial in causal inference using linear ODE/SDEs as they enable the identification of the post-intervention distributions from its observational distribution. 
         </td></tr>
     </tbody></table>
    
@@ -213,13 +181,56 @@
         </tr>
     </tbody></table>
 
-    <table id="Maxim Panov">
+    <table id="Martin Takac">
         <tbody><tr>
             <td class="date" rowspan="3">
                 2:00pm
             </td>
             <td class="title">
-                Uncertainty Quantification for Generative Language Models
+                TBA
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai.ac.ae/study/faculty/martin-takac/"><b>Martin Takac</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                TBA
+        </td></tr>
+    </tbody></table>
+
+
+    <table id="Salem Lahlou">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                2:30pm
+            </td>
+            <td class="title">
+                TBA
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai.ac.ae/study/faculty/salem-lahlou/"><b>Salem Lahlou</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                TBA
+        </td></tr>
+    </tbody></table>
+
+    
+
+    <table id="Maxim Panov">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                3:00pm
+            </td>
+            <td class="title">
+                TBA
             </td>
         </tr>
         <tr>
@@ -229,50 +240,7 @@
         </tr>
         <tr>
             <td class="abstract">
-                The widespread deployment of large language models (LLMs) has made ML-based applications even more vulnerable to risks of causing various forms of harm to users. For example, models often “hallucinate”, i.e., fabricate facts without providing users an apparent means to validate their statements. Uncertainty estimation (UE) methods could be used to detect unreliable generations unlocking the safer and more responsible use of LLMs in practice. UE methods for generative LLMs are a subject of cutting-edge research, which is currently quite scarce and scattered. We systemize these efforts, discuss common caveats, and provide suggestions for the development of novel techniques in this area.
-        </td></tr>
-    </tbody></table>
-
-
-    <table id="Han Zhao">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                2:30pm
-            </td>
-            <td class="title">
-                 Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://hanzhaoml.github.io"><b>Han Zhao</b></a> (UIUC)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Fine-grained control over large language models (LLMs) remains a significant challenge, hindering their adaptability to diverse user needs. While Reinforcement Learning from Human Feedback (RLHF) shows promise in aligning LLMs, its reliance on scalar rewards often limits its ability to capture diverse user preferences in real-world applications. To address this limitation, in this talk I will introduce and discuss our Directional Preference Alignment (DPA) framework. Unlike the scalar-reward RLHF, DPA incorporates multi-objective reward modeling to represent diverse preference profiles. Additionally, DPA models user preferences as directions (i.e., unit vectors) in the reward space to achieve user-dependent preference control. Our method involves training a multi-objective reward model and then fine-tuning the LLM with a preference-conditioned variant of Rejection Sampling Fine-tuning (RSF), an RLHF method adopted by Llama 2. This method enjoys a better performance trade-off across various reward objectives. In comparison with the scalar-reward RLHF, DPA offers users intuitive control over LLM generation: they can arithmetically specify their desired trade-offs (e.g., more helpfulness with less verbosity). We also validate the effectiveness of DPA with real-world alignment experiments on Mistral-7B. Our method provides straightforward arithmetic control over the trade-off between helpfulness and verbosity while maintaining competitive performance with strong baselines such as Direct Preference Optimization (DPO).
-        </td></tr>
-    </tbody></table>
-
-    
-
-    <table id="Nils Hendrik Lukas">
-        <tbody><tr>
-            <td class="date" rowspan="3">
-                3:00pm
-            </td>
-            <td class="title">
-                Analyzing the Privacy of Personal Information in Language Models
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <a href="https://nilslukas.github.io"><b>Nils Hendrik Lukas</b></a> (MBZUAI)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Language models (LMs) have been shown to leak information about their training data through sentence-level membership inference and reconstruction attacks. Understanding the risk of LMs leaking Personally Identifiable Information (PII) has received less attention, which can be attributed to the false assumption that dataset curation techniques such as scrubbing are sufficient to prevent PII leakage. Scrubbing reduces but does not prevent the risk of PII leakage. We introduce game-based definitions for three types of PII leakage via black-box extraction, inference, and reconstruction attacks with only API access to the LM. Our main contributions are: (i) novel attacks that can extract up to 10 times more PII sequences than existing attacks, (ii) showing that sentence-level differential privacy reduces the risk of PII disclosure but still leaks about 3% of PII sequences, and (iii) a subtle connection between record-level membership inference and PII reconstruction. I will summarize challenges with privacy-preserving fine-tuning of LMs, describe our proposed solutions, and provide an outlook on challenges and promising future research directions to protect sensitive information in LMs.
+                TBA
         </td></tr>
     </tbody></table>
 
@@ -292,26 +260,39 @@
         </tr>
     </tbody></table>
 
-    <table id="Hector Liu">
+    <table id="Nils Lukas">
         <tbody><tr>
             <td class="date" rowspan="3">
-                4:00pm-5:40pm
+                4:00pm
             </td>
             <td class="title">
-                Special Session: LLM360: DEMYSTIFYING LLM AND TOWARDS OPEN SOURCE AI 
+                TBA
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://hunterhector.github.io/"><b>Hector Liu</b></a> (Petuum/MBZUAI)
+                <a href="https://mbzuai.ac.ae/study/faculty/nils-lukas/"><b>Nils Lukas</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                The rapid advancements in Artificial Intelligence (AI) and Large Language Models (LLMs) have transformed numerous fields, yet their complexities often remain obscure to many. This talk aims to shed light on the building process of LLMs and promote the LLM360 initiative of open-source AI, offering both theoretical insights and practical knowledge for researchers and practitioners alike. <br><br>
-
-                We will discuss the LLM360 project's commitment to open-source principles, highlighting our attempts to democratize AI by making LLM methodologies publicly available. The talk will then delve into the process of pretraining large language models using the LLM360 experiences materials, and provide an overview of research relevant to LLM training. We conclude by presenting a series of case studies that utilize the LLM360 artifacts showcasing LLM behavior and performance.
+                TBA
         </td></tr>
+    </tbody></table>
+    <table id="panel discussion">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                4:30pm-5:30pm
+            </td>
+            <td class="title">
+                Panel Discussion
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                TBA
+            </td>
+        </tr>
     </tbody></table>
 
     
