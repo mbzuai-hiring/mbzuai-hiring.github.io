@@ -12,7 +12,7 @@
   <style>
     /* --- simple tab navigation --- */
     .tabs{display:flex;gap:1rem;margin-top:2rem;border-bottom:2px solid #ccc;flex-wrap:wrap}
-    .tabs button{background:none;border:none;padding:0.75rem 1.25rem;font-size:1.25rem;cursor:pointer;border-bottom:3px solid transparent}
+    .tabs button{background:none;border:none;padding:0.75rem 1.25rem;font-size:1.5rem;cursor:pointer;border-bottom:3px solid transparent}
     .tabs button:focus{outline:2px solid #005fcc;outline-offset:2px}
     .tabs button.active{border-color:#005fcc;font-weight:600}
     .tab-content{display:none;margin-top:1.5rem}
@@ -60,15 +60,15 @@
       }
       /* bump font size for tab headers and collaborator names on mobile */
       .tabs button{
-        font-size:1.35rem;   /* slightly larger than default 1rem */
+        font-size:1.6rem;   /* slightly larger than default 1rem */
       }
       .collaborator{
-        width:140px;        /* wider card on phones */
-        font-size:1rem;     /* larger caption */
+        width:160px;
+        font-size:1.15rem;
       }
       .collaborator img{
-        width:140px;
-        height:140px;
+        width:160px;
+        height:160px;
       }
     }
   </style>
@@ -77,12 +77,12 @@
     .collaborators{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:1rem}
     .collaborator{
       text-align:center;
-      font-size:1rem;   /* larger caption on desktop */
-      width:150px;      /* wider card */
+      font-size:1.15rem;
+      width:160px;
     }
     .collaborator img{
-      width:150px;
-      height:150px;
+      width:160px;
+      height:160px;
       object-fit:cover;
       object-position:center;
       border-radius:50%;
