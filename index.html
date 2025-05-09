@@ -23,10 +23,18 @@
       list-style:none;          /* remove default disc */
       padding-left:0;           /* align with text */
     }
+    /* --- keep list text same size as paragraphs --- */
     .info-box ul li,
     .tab-content ul li{
       margin-left:1.2em;        /* indent text */
       text-indent:-1.2em;       /* hang the dash */
+      font-size:1rem;           /* inherit default size, no downscaling */
+      line-height:1.5;
+    }
+
+    /* --- side‑padding for all headings --- */
+    h1,h2,h3,h4,h5,h6{
+      padding:0 1rem;
     }
 
     /* --- mobile layout adjustments --- */
@@ -50,9 +58,12 @@
       .banner .title2{
         font-size:1.125rem;     /* ≈18 px */
       }
-      /* add side padding for section titles on mobile */
-      h2{
-        padding:0 1rem;
+      /* bump font size for tab headers and collaborator names on mobile */
+      .tabs button{
+        font-size:1.1rem;   /* slightly larger than default 1rem */
+      }
+      .collaborator{
+        font-size:0.9rem;   /* was 0.8rem */
       }
     }
   </style>
@@ -104,7 +115,7 @@
         <li>- Integrates with existing booking, pricing, and loyalty systems</li>
         <li>- Engages users naturally in English </li>
          <li>- Tracks users intent and drives conversational upselling</li>
-        <li>- Guarantees safety, reliability, and personalised recommendations</li>
+        <li>- Guarantees safety, reliability, and personalized recommendations</li>
       </ul>
     </section>
 
